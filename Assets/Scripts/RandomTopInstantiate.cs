@@ -22,7 +22,7 @@ public class RandomTopInstantiate : MonoBehaviour
 		    float randX = Random.Range(_fromX, _toX),
 			    randY = Random.Range(_fromY, _toY),
 			    randAngleRotation = Random.Range(0, _angleRotation);
-		    var whereToInstantiate = new Vector2(randX, randY);
+		    var whereToInstantiate = new Vector3(randX, randY, -0.01f);
 
 		    Item.GetComponent<Rigidbody2D>().mass = Random.Range(0.1f, 20.0f);
 		   
