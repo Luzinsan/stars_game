@@ -7,7 +7,7 @@ public class LocalTouchHandler : MonoBehaviour
 
    void Start()
    {
-      _gameHelper = Camera.main.GetComponent<MainMenu>();
+      _gameHelper = Canvas.FindObjectOfType<MainMenu>();
    }
    private void OnMouseDown()
    {

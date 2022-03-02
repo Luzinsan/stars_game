@@ -6,6 +6,6 @@ public class Movement : MonoBehaviour
     void Update()
     {
 	    transform.Rotate(0,0,100 * Time.deltaTime * _speedRotate);
-		
+        
     }
 }
