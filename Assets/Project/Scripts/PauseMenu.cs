@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    [SerializeReference] private GameObject _menu;
+    [SerializeReference] private GameObject menu;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -41,7 +42,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         var gamer = Canvas.FindObjectOfType<MainMenu>();
         gamer._score = 0;
-        _menu.SetActive(true);
+        menu.SetActive(true);
     }
 
     public void QuitGame()
