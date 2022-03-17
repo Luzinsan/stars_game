@@ -5,9 +5,9 @@ using UnityEngine.Serialization;
 public class PauseMenu : MonoBehaviour
 {
     private static bool GameIsPaused = false;
-    private GameObject pauseMenuUI;
+    [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private GameObject menu;
-    [SerializeField] private MainMenu mainMenu;
+    [SerializeReference] private MainMenu mainMenu;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
