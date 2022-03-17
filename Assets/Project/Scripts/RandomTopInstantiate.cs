@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class RandomTopInstantiate : MonoBehaviour
 {
-    public GameObject Item;
+	private GameObject Item;
 	[SerializeField] private float _fromX = 0.0f;
 	[SerializeField] private float _toX = 5.0f;
 	[SerializeField] private float _fromY = 0.0f;
@@ -24,7 +24,7 @@ public class RandomTopInstantiate : MonoBehaviour
 			    randAngleRotation = Random.Range(0, _angleRotation);
 		    var whereToInstantiate = new Vector3(randX, randY, -0.01f);
 
-		    Item.GetComponent<Rigidbody2D>().mass = Random.Range(0.1f, 20.0f);
+		    //Item.GetComponent<Rigidbody2D>().mass = Random.Range(0.1f, 20.0f);
 		   
 		    Instantiate(Item, whereToInstantiate, Quaternion.Euler(0, 0, randAngleRotation));
 	    }

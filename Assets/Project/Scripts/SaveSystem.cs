@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SaveSystem : MonoBehaviour
 {
-    public GameObject obj;
+    private GameObject obj;
     private Save sv = new Save();
     private string path;
 
