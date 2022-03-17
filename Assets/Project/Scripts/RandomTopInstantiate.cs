@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class RandomTopInstantiate : MonoBehaviour
 {
-    public GameObject Item;
+	private GameObject Item;
 	[SerializeField] private float _fromX = 0.0f;
 	[SerializeField] private float _toX = 5.0f;
 	[SerializeField] private float _fromY = 0.0f;

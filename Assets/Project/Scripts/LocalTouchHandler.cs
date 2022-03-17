@@ -6,16 +6,18 @@ public class LocalTouchHandler : MonoBehaviour
 {
    [SerializeField] private MainMenu _gameHelper;
    [SerializeField] private AudioSource bloopSound;
-  
+   [SerializeField] private TextMeshProUGUI _pauseScoreText;
+   [SerializeField] private  TextMeshProUGUI _gameScoreText;
+   [SerializeField] private TextMeshProUGUI _bestScoreText;
    private void OnMouseDown()
    {
       _gameHelper._score++;
-      _gameHelper._gameScoreText.text = _gameHelper._score.ToString();
-      _gameHelper._pauseScoreText.text = "Текущий счёт: " + _gameHelper._gameScoreText.text;
+      _gameScoreText.text = _gameHelper._score.ToString();
+      _pauseScoreText.text = "Текущий счёт: " + _gameScoreText.text;
       if (_gameHelper._bestScore < _gameHelper._score)
       {
          _gameHelper._bestScore = _gameHelper._score;
-         _gameHelper._bestScoreText.text = "Рекорд: " + _gameHelper._bestScore.ToString();
+         _bestScoreText.text = "Рекорд: " + _gameHelper._bestScore.ToString();
       }
       bloopSound.Play();
       Debug.Log("Clicked!!!");

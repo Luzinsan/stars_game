@@ -8,9 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public int _bestScore;
     public int _score = 0;
-    [SerializeField] public  TextMeshProUGUI _gameScoreText;
-    [SerializeField] public TextMeshProUGUI _bestScoreText;
-    [SerializeField] public TextMeshProUGUI _pauseScoreText;
+    [SerializeField] private  TextMeshProUGUI _gameScoreText;
     [SerializeField] private GameObject PanelActive;
     [SerializeField] private GameObject PanelPassive;
     private void Start()
@@ -21,12 +19,10 @@ public class MainMenu : MonoBehaviour
 
     private void Update()
     {
-
         if (Time.time > 60.0)
         {
             PanelActive.SetActive(true);
             PanelPassive.SetActive(false);
-            
         }
     }
 
