@@ -579,7 +579,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfdc37992d7008c4687e607bdb7a5f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 519420028}
 --- !u!1 &542855124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,6 +1650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 360409610}
   menu: {fileID: 2132900238}
+  mainMenu: {fileID: 1385902033}
 --- !u!114 &1385902033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1666,9 +1666,7 @@ MonoBehaviour:
   _bestScore: 0
   _score: 0
   _gameScoreText: {fileID: 542855127}
-  _bestScoreText: {fileID: 818379570}
-  _pauseScoreText: {fileID: 218790704}
-  PanelActive: {fileID: 0}
+  PanelActive: {fileID: 2132900238}
   PanelPassive: {fileID: 859041705}
 --- !u!1 &1638785816
 GameObject:
@@ -2775,6 +2773,18 @@ PrefabInstance:
       propertyPath: _gameHelper
       value: 
       objectReference: {fileID: 1385902033}
+    - target: {fileID: 782540004169973778, guid: e890f6055152c2b49a0e971f0f7cf07c, type: 3}
+      propertyPath: _bestScoreText
+      value: 
+      objectReference: {fileID: 818379570}
+    - target: {fileID: 782540004169973778, guid: e890f6055152c2b49a0e971f0f7cf07c, type: 3}
+      propertyPath: _gameScoreText
+      value: 
+      objectReference: {fileID: 542855127}
+    - target: {fileID: 782540004169973778, guid: e890f6055152c2b49a0e971f0f7cf07c, type: 3}
+      propertyPath: _pauseScoreText
+      value: 
+      objectReference: {fileID: 218790704}
     - target: {fileID: 782540004169973783, guid: e890f6055152c2b49a0e971f0f7cf07c, type: 3}
       propertyPath: m_Name
       value: Dino
@@ -2856,6 +2866,18 @@ PrefabInstance:
       propertyPath: _gameHelper
       value: 
       objectReference: {fileID: 1385902033}
+    - target: {fileID: 9015832774544531131, guid: e067a1abdd159254381f6905df074a4e, type: 3}
+      propertyPath: _bestScoreText
+      value: 
+      objectReference: {fileID: 818379570}
+    - target: {fileID: 9015832774544531131, guid: e067a1abdd159254381f6905df074a4e, type: 3}
+      propertyPath: _gameScoreText
+      value: 
+      objectReference: {fileID: 542855127}
+    - target: {fileID: 9015832774544531131, guid: e067a1abdd159254381f6905df074a4e, type: 3}
+      propertyPath: _pauseScoreText
+      value: 
+      objectReference: {fileID: 218790704}
     - target: {fileID: 9015832774544531135, guid: e067a1abdd159254381f6905df074a4e, type: 3}
       propertyPath: m_RootOrder
       value: 5

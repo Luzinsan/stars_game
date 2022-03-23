@@ -57,9 +57,10 @@
      <Compile Include="Assets\Project\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Project\Scripts\Destroy.cs" />
      <Compile Include="Assets\Project\Scripts\RandomTopInstantiate.cs" />
+     <Compile Include="Assets\Project\Scripts\OnClick.cs" />
      <Compile Include="Assets\Project\Scripts\SaveSystem.cs" />
      <Compile Include="Assets\Project\Scripts\LocalTouchHandler.cs" />
-     <Compile Include="Assets\Project\Scripts\OnClick.cs" />
+     <Compile Include="Assets\Project\Scripts\Controller.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
